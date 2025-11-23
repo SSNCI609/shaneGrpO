@@ -1,0 +1,240 @@
+/* -------------------------------      CSS Shane Smyth 1 & 2       ------------------------------ */
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Jura", sans-serif;
+    }
+        
+    .ss-hero-section,
+    .ss-feature-section,
+    .ss-cards-section,
+    .ss-cta-section,
+    .ss-text-img-section,
+    .ss-hero2-section {
+        padding: 4rem 0;
+    }
+
+/* ------------------------------        NAVS        ------------------------------ */
+
+    .ss-nav {
+        background-color: #516B39;        /* earthy green */
+    }
+
+    /* Brand + icon */
+    .ss-nav-brand {
+        color: #C2E5F4;
+        font-weight: 700;
+    }
+
+    .ss-nav-brand-text {
+        font-size: 1rem;
+        letter-spacing: 0.04em;
+    }
+
+    .ss-sdg-icon {
+        width: 40px;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    /* Toggler */
+    .ss-nav-toggler {
+        border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Make toggler icon visible on dark bg (when using navbar-light) */
+    .navbar-light .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    /* Collapse area */
+    .ss-nav-collapse {
+        background-color: #516B39;        /* same as bar for mobile menu */
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    /* Nav - list & items */
+    .ss-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /* Pill-style links */
+    .ss-nav-pill {
+        border: 1px solid #C2E5F4;
+        border-radius: 999px;
+        padding: 0.35rem 0.9rem;
+        color: #C2E5F4 !important;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        background-color: transparent;
+    }
+
+    .ss-nav-pill:hover,
+    .ss-nav-pill:focus {
+        background-color: #C2E5F4;
+        color: #010312 !important;        /* dark text on hover */
+        text-decoration: none;
+    }
+
+    /* Active link */
+    .ss-active {
+        background-color: #C2E5F4 !important;
+        color: #010312 !important;
+        border-color: #C2E5F4 !important;
+        font-weight: 700;
+    }
+
+    /* small screens - stack */
+    @media (max-width: 575.98px) {
+        .ss-nav-list {
+            justify-content: flex-start;
+        }
+
+        .ss-nav-pill {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+/* ------------------------------ Placeholders (images / boxes) ------------------------------ */
+
+    .ss-placeholder-image,
+    .ss-placeholder-square {
+        display: block;
+        width: 100%;
+        border: 2px dashed #010312;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* 16:9 hero / card images */
+    .ss-placeholder-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Square images */
+    .ss-placeholder-square {
+        aspect-ratio: 1 / 1;
+    }
+
+/* ------------------------------ PAGE 1 SECTIONS             ------------------------------ */
+
+/* Hero */
+.ss-hero-section {
+    background-color: #8FAB7B; /* soft sage */
+}
+
+.ss-hero-title {
+    font-size: 2.75rem;
+}
+
+.ss-hero-subtext {
+    font-size: 1.25rem;
+}
+
+/* Feature */
+.ss-feature-section {
+    background-color: #CCDADC; /* misty grey */
+}
+
+/* Cards */
+.ss-cards-section {
+    background-color: #C2E5F4; /* light blue */
+}
+
+.ss-card-title {
+    font-size: 1.15rem;
+}
+
+/* CTA */
+.ss-cta-section {
+    background-color: #8FAB7B;
+}
+
+.ss-cta-title {
+    margin-bottom: 0.5rem;
+}
+
+.ss-cta-text {
+    margin-bottom: 1.5rem;
+}
+
+/* CTA button */
+.ss-btn-cta {
+    border-radius: 0;
+    padding: 0.75rem 2.5rem;
+    font-weight: 600;
+    border-color: #010312;
+    color: #010312;
+    background-color: transparent;
+}
+
+.ss-btn-cta:hover {
+    background-color: #010312;
+    color: #C2E5F4;
+}
+
+/* ------------------------------   PAGE 2 SECTIONS         ------------------------------ */
+
+.ss-text-img-section {
+    background-color: #CCDADC; /* default */
+}
+
+/* Alternate background blocks */
+#ss-text-img-1.ss-text-img-section {
+    background-color: #CCDADC;
+}
+
+#ss-hero-2.ss-hero2-section {
+    background-color: #C2E5F4;
+}
+
+#ss-text-img-2.ss-text-img-section {
+    background-color: #8FAB7B;
+}
+
+#ss-text-img-3.ss-text-img-section {
+    background-color: #CCDADC;
+}
+
+.ss-text-img-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Hero 2 centre section */
+.ss-hero2-section {
+    /* padding already from global */
+}
+
+.ss-hero2-title {
+    font-size: 2.25rem;
+}
+
+.ss-hero2-sub {
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Responsive tweaks
+------------------------------ */
+
+@media (max-width: 767.98px) {
+    .ss-hero-title {
+        font-size: 2.1rem;
+    }
+
+    .ss-hero-section,
+    .ss-feature-section,
+    .ss-cards-section,
+    .ss-cta-section,
+    .ss-text-img-section,
+    .ss-hero2-section {
+        padding: 3rem 0;
+    }
+}
