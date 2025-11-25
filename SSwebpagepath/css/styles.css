@@ -1,134 +1,174 @@
 /* -------------------------------      CSS Shane Smyth 1 & 2       ------------------------------ */
 
-    body {
-        font-family: "Poppins", sans-serif;
-    }
+body {
+    font-family: "Poppins", sans-serif;
+}
 
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Jura", sans-serif;
-    }
-        
-    .ss-hero-section,
-    .ss-feature-section,
-    .ss-cards-section,
-    .ss-cta-section,
-    .ss-text-img-section,
-    .ss-hero2-section {
-        padding: 4rem 0;
-    }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jura", sans-serif;
+}
+    
+.ss-hero-section,
+.ss-feature-section,
+.ss-cards-section,
+.ss-cta-section,
+.ss-text-img-section,
+.ss-hero2-section {
+    padding: 4rem 0;
+}
 
 /* ------------------------------        NAVS        ------------------------------ */
 
-    .ss-nav {
-        background-color: #516B39;        /* earthy green */
-    }
+.ss-nav {
+    background-color: #516B39;        /* earthy green */
+}
 
-    /* Brand + icon */
-    .ss-nav-brand {
-        color: #C2E5F4;
-        font-weight: 700;
-    }
+/* Brand + icon */
+.ss-nav-brand {
+    color: #C2E5F4;
+    font-weight: 700;
+}
 
-    .ss-nav-brand-text {
-        font-size: 1rem;
-        letter-spacing: 0.04em;
-    }
+.ss-nav-brand-text {
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
 
-    .ss-sdg-icon {
-        width: 40px;
-        height: auto;
-        border-radius: 4px;
-    }
+.ss-sdg-icon {
+    width: 40px;
+    height: auto;
+    border-radius: 4px;
+}
 
-    /* Toggler */
-    .ss-nav-toggler {
-        border-color: rgba(255, 255, 255, 0.6);
-    }
+/* Toggler */
+.ss-nav-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
 
-    /* Make toggler icon visible on dark bg (when using navbar-light) */
-    .navbar-light .navbar-toggler-icon {
-        filter: invert(1);
-    }
+/* Make toggler icon visible on dark bg (when using navbar-light) */
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
 
-    /* Collapse area */
-    .ss-nav-collapse {
-        background-color: #516B39;        /* same as bar for mobile menu */
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
+/* Collapse area */
+.ss-nav-collapse {
+    background-color: #516B39;        /* same as bar for mobile menu */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 
-    /* Nav - list & items */
+/* Nav - list & items */
+.ss-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Pill-style links */
+.ss-nav-pill {
+    border: 1px solid #C2E5F4;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    color: #C2E5F4 !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+.ss-nav-pill:hover,
+.ss-nav-pill:focus {
+    background-color: #C2E5F4;
+    color: #010312 !important;        /* dark text on hover */
+    text-decoration: none;
+}
+
+/* Active link */
+.ss-active {
+    background-color: #C2E5F4 !important;
+    color: #010312 !important;
+    border-color: #C2E5F4 !important;
+    font-weight: 700;
+}
+
+/* small screens - stack */
+@media (max-width: 575.98px) {
     .ss-nav-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
+        justify-content: flex-start;
     }
 
-    /* Pill-style links */
     .ss-nav-pill {
-        border: 1px solid #C2E5F4;
-        border-radius: 999px;
-        padding: 0.35rem 0.9rem;
-        color: #C2E5F4 !important;
-        font-size: 0.9rem;
-        white-space: nowrap;
-        background-color: transparent;
+        width: 100%;
+        text-align: center;
     }
-
-    .ss-nav-pill:hover,
-    .ss-nav-pill:focus {
-        background-color: #C2E5F4;
-        color: #010312 !important;        /* dark text on hover */
-        text-decoration: none;
-    }
-
-    /* Active link */
-    .ss-active {
-        background-color: #C2E5F4 !important;
-        color: #010312 !important;
-        border-color: #C2E5F4 !important;
-        font-weight: 700;
-    }
-
-    /* small screens - stack */
-    @media (max-width: 575.98px) {
-        .ss-nav-list {
-            justify-content: flex-start;
-        }
-
-        .ss-nav-pill {
-            width: 100%;
-            text-align: center;
-        }
-    }
+}
 
 /* ------------------------------ Placeholders (images / boxes) ------------------------------ */
 
-    .ss-placeholder-image,
-    .ss-placeholder-square {
-        display: block;
-        width: 100%;
-        border: 2px dashed #010312;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
+.ss-placeholder-image,
+.ss-placeholder-square {
+    display: block;
+    width: 100%;
+    border: 2px dashed #010312;
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
-    /* 16:9 hero / card images */
-    .ss-placeholder-image {
-        aspect-ratio: 16 / 9;
-    }
+/* 16:9 hero / card images */
+.ss-placeholder-image {
+    aspect-ratio: 16 / 9;
+}
 
-    /* Square images */
-    .ss-placeholder-square {
-        aspect-ratio: 1 / 1;
-    }
+/* Square images */
+.ss-placeholder-square {
+    aspect-ratio: 1 / 1;
+}
 
 /* ------------------------------ PAGE 1 SECTIONS             ------------------------------ */
 
 /* Hero */
+/* HERO IMAGE FULL WIDTH */
+.ss-hero-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh;             /* Adjusts height as needed */
+    overflow: hidden;
+}
+
+/* Make image cover the entire hero section */
+.ss-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Full-width hero containers (Page 1 & Page 2 big hero) */
+.ss-hero-container,
+.ss-hero2-container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Text overlay */
+.ss-hero-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    padding: 1rem 2rem;
+    max-width: 90%;
+}
+
+/* Base hero styling */
 .ss-hero-section {
     background-color: #8FAB7B; /* soft sage */
 }
 
+/* Base hero text sizes (shared across both heroes) */
 .ss-hero-title {
     font-size: 2.75rem;
 }
@@ -224,11 +264,22 @@
    Responsive tweaks
 ------------------------------ */
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
+
+    /* Hero text + height */
     .ss-hero-title {
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
+    .ss-hero-subtext {
+        font-size: 1.05rem;
+    }
+
+    .ss-hero-img-wrapper {
+        height: 50vh;
+    }
+
+    /* Section padding */
     .ss-hero-section,
     .ss-feature-section,
     .ss-cards-section,
