@@ -1,0 +1,552 @@
+/* --------------------     FONTS & GLOBAL LAYOUT           --------------------*/
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Jura", sans-serif;
+    }
+
+    .ss-hero-section,
+    .ss-feature-section,
+    .ss-cards-section,
+    .ss-cta-section,
+    .ss-text-img-section,
+    .ss-hero2-section {
+        padding: 3rem 0;
+    }
+
+
+/* --------------------     NAVIGATION (PAGE 1 & PAGE 2)    --------------------*/
+
+    .ss-nav {
+        background-color: #516B39; /* earthy green */
+    }
+
+    /* Brand + SDG icon area */
+    .ss-nav-brand {
+        color: #C2E5F4;
+        font-weight: 700;
+    }
+
+    /* Toggler button */
+    .ss-nav-toggler {
+        border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Make toggler icon visible on light navbar */
+    .navbar-light .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
+    /* Collapsed menu background */
+    .ss-nav-collapse {
+        background-color: #516B39;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    /* Nav list & pills */
+    .ss-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /* Pill-style links */
+    .ss-nav-pill {
+        background-color: transparent;
+        border: 1px solid #C2E5F4;
+        border-radius: 999px;
+        color: #C2E5F4 !important;
+        font-size: 0.9rem;
+        padding: 0.35rem 0.9rem;
+        white-space: nowrap;
+    }
+
+    .ss-nav-pill:hover,
+    .ss-nav-pill:focus {
+        background-color: #C2E5F4;
+        color: #010312 !important; /* dark text on hover */
+        text-decoration: none;
+    }
+
+    /* Active nav link */
+    .ss-active {
+        background-color: #C2E5F4 !important;
+        border-color: #C2E5F4 !important;
+        color: #010312 !important;
+        font-weight: 700;
+    }
+
+    /* Small screens: stack nav pills full-width */
+    @media (max-width: 575.98px) {
+        .ss-nav-list {
+            justify-content: flex-start;
+        }
+
+        .ss-nav-pill {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+
+/* --------------------     HERO SECTIONS (PAGE 1 & 2)      --------------------*/
+
+    /* Wrapper controlling height + overflow */
+    .ss-hero-img-wrapper {
+        height: 70vh;          /* adjust as needed */
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    /* Make hero images cover the wrapper */
+    .ss-hero-img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    /* Full-width hero containers */
+    .ss-hero-container,
+    .ss-hero2-container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    /* Text overlay shared by both heroes */
+    .ss-hero-overlay-text {
+        color: #ffffff;
+        left: 50%;
+        max-width: 90%;
+        padding: 1rem 2rem;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .ss-hero-section {
+        background-color: #8FAB7B; /* soft sage */
+    }
+
+    .ss-hero-title {
+        font-size: 2.75rem;
+    }
+
+    .ss-hero-subtext {
+        font-size: 1.25rem;
+    }
+
+    /* Hero 2 (centre hero on page 2) */
+    .ss-hero2-section {
+        background-color: #C2E5F4;
+    }
+
+    .ss-hero2-title {
+        font-size: 2.25rem;
+    }
+
+    .ss-hero2-sub {
+        font-size: 1.1rem;
+    }
+
+
+/* --------------------     FEATURE SECTION (PAGE 1)        --------------------*/
+
+    .ss-feature-section {
+        background-color: #CCDADC; /* misty grey */
+    }
+
+    /* Cow image */
+    .ss-feature-img-cow {
+        border-radius: 12px;
+        display: block;
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ss-feature-title {
+        margin-bottom: 1rem;
+    }
+
+    .ss-feature-p {
+        margin-bottom: 0.75rem;
+    }
+
+
+/* --------------------     THREE PILLARS CARDS (PAGE 1)    --------------------*/
+
+    .ss-cards-section {
+        background-color: #C2E5F4; /* light blue */
+    }
+
+    .ss-cards-header {
+        margin-bottom: 1.5rem;
+    }
+
+
+    /* Card images */
+    .ss-card-img {
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+        display: block;
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ss-card-title {
+        font-size: 1.15rem;
+        margin-bottom: 0;
+    }
+
+
+/* --------------------     MAP SECTION (PAGE 1)            --------------------*/
+
+    .ss-map-container {
+        max-width: 1100px;
+    }
+
+    #ss-nlc-map {
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        height: 420px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+
+/* --------------------     CTA SECTIONS                    --------------------*/
+
+    .ss-cta-section {
+        background-color: #8FAB7B;
+    }
+
+    .ss-cta-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .ss-cta-line {
+        border-top: 2px solid #010312;
+        margin-bottom: 0.75rem;
+        opacity: 0.8;
+    }
+
+    .ss-cta-text {
+        margin-bottom: 1.5rem;
+    }
+
+    /* CTA button */
+    .ss-btn-cta {
+        background-color: transparent;
+        border-color: #010312;
+        border-radius: 0;
+        color: #010312;
+        font-weight: 600;
+        padding: 0.75rem 2.5rem;
+    }
+
+    .ss-btn-cta:hover {
+        background-color: #010312;
+        color: #C2E5F4;
+    }
+
+
+/* --------------------     PAGE 2: TEXT + IMAGE SECTIONS   --------------------*/
+
+    /* Base styling shared by all three text+image blocks */
+    .ss-text-img-section {
+        background-color: #CCDADC; /* default light grey-blue */
+    }
+
+    .ss-text-img-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .ss-text-img-p {
+        margin-bottom: 0.75rem;
+    }
+
+    /* Alternate backgrounds for specific blocks on page 2 */
+    #ss-text-img-2.ss-text-img-section {
+        background-color: #8FAB7B; /* sage green block */
+    }
+
+    #ss-text-img-3.ss-text-img-section {
+        background-color: #CCDADC;
+    }
+
+
+/* --------------------     GALLERY + LIGHTBOX (PAGE 1)     --------------------*/
+
+    /* Section container */
+    .ss-gallery-section {
+        background-color: #CCDADC;
+        padding: 4rem 0;
+    }
+
+    /* gallery header */
+    .ss-container {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 0 1rem;
+    }
+
+    /* Gallery heading */
+    .ss-gallery-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ss-gallery-subtext {
+        font-size: 1rem;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    /* Thumbnail row on the page */
+    .ss-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    /* Thumbnail columns */
+    .ss-column {
+        flex: 1 1 180px;
+        max-width: 220px;
+    }
+
+    /* Thumbnails in the main page grid */
+    .ss-gallery-section .ss-column img {
+        aspect-ratio: 4 / 3;
+        border-radius: 12px;
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    /* Hover effect for main grid */
+    .ss-hover-shadow {
+        cursor: pointer;
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            opacity 0.25s ease;
+    }
+
+    .ss-hover-shadow:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        opacity: 0.95;
+        transform: translateY(-4px);
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* ----- Modal overlay ----- */
+
+    .ss-modal {
+        background-color: rgba(1, 3, 18, 0.88); 
+        display: none;
+        height: 100%;
+        left: 0;
+        overflow: auto;
+        padding: 2rem 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1050;
+    }
+
+    /* Modal inner content wrapper */
+    .ss-modal-content {
+        margin: auto;
+        max-width: 1000px;
+        position: relative;
+        width: 90%;
+    }
+
+    /* Each slide */
+    .ss-mySlides {
+        display: none;
+        position: relative;
+    }
+
+    .ss-mySlides img {
+        border-radius: 16px;
+        width: 100%;
+    }
+
+    /* Slide number text */
+    .ss-numbertext {
+        color: #C2E5F4;
+        font-size: 0.8rem;
+        left: 0;
+        padding: 0.4rem 0.75rem;
+        position: absolute;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        top: 0;
+    }
+
+    /* Close button (X) */
+    .ss-close {
+        color: #C2E5F4;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 400;
+        position: absolute;
+        right: 30px;
+        top: 18px;
+        transition: opacity 0.2s ease;
+    }
+
+    .ss-close:hover {
+        opacity: 0.7;
+    }
+
+    /* Next/prev arrows */
+    .ss-prev,
+    .ss-next {
+        background-color: rgba(0, 0, 0, 0.35);
+        border-radius: 999px;
+        color: #C2E5F4;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+        transition:
+            background-color 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .ss-prev {
+        left: 16px;
+    }
+
+    .ss-next {
+        right: 16px;
+    }
+
+    .ss-prev:hover,
+    .ss-next:hover {
+        background-color: rgba(0, 0, 0, 0.65);
+        transform: translateY(-50%) scale(1.03);
+    }
+
+    /* Caption text under main image */
+    .ss-caption-container {
+        color: #C2E5F4;
+        font-size: 0.95rem;
+        padding: 1rem 0 0.25rem;
+        text-align: center;
+    }
+
+    /* Thumbnails inside modal (bottom strip) */
+    .ss-modal-content .ss-column {
+        float: left;
+        padding: 0.5rem;
+        width: 25%;
+    }
+
+    /* Clear floats after thumbnail row */
+    .ss-modal-content::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    /* Thumbnails in modal strip */
+    .ss-demo {
+        border-radius: 8px;
+        cursor: pointer;
+        opacity: 0.6;
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+        width: 100%;
+    }
+
+    .ss-demo:hover,
+    .ss-demo.active {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+
+
+/* --------------------     RESPONSIVE ≤ 768px              --------------------*/
+
+    @media (max-width: 768px) {
+        /* Reduce hero height on smaller screens */
+        .ss-hero-img-wrapper {
+            height: 50vh;
+        }
+
+        /* Scale hero typography down slightly */
+        .ss-hero-title {
+            font-size: 2rem;
+        }
+
+        .ss-hero-subtext {
+            font-size: 1.05rem;
+        }
+
+        /* Gallery spacing + modal tweaks */
+        .ss-gallery-section {
+            padding: 3rem 0;
+        }
+
+        .ss-modal {
+            padding-top: 3rem;
+        }
+
+        .ss-modal-content {
+            max-width: 100%;
+            width: 94%;
+        }
+
+        .ss-prev,
+        .ss-next {
+            font-size: 1.25rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .ss-close {
+            font-size: 1.7rem;
+            right: 18px;
+            top: 14px;
+        }
+
+        .ss-modal-content .ss-column {
+            width: 50%; /* 2 thumbnails per row on small screens */
+        }
+
+        /* Map height on small screens */
+        #ss-nlc-map {
+            height: 320px;
+        }
+    }

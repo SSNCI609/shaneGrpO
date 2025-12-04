@@ -1,0 +1,379 @@
+<!--ss1.1-->
+<!-- Shane Smyth PAGE ONE   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Life on Land – Farming & Agriculture (Page 1)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-----------------     Google Font      ----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-----------------     Bootstrap        ----------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-----------------     Leaflet CSS      ----------------->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+<!-----------------     CSS              ----------------->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-----------------     NAV              ----------------->
+    <nav class="navbar navbar-expand-lg navbar-light ss-nav border-bottom" id="ss-nav-main">
+        <div class="container ss-nav-container">
+
+            <a class="navbar-brand fw-bold ss-nav-brand d-flex align-items-center" href="index.html">
+                <img src="img/sdg15-en.png"
+                     alt="SDG 15 Life on Land"
+                     class="ss-sdg-icon me-2"
+                     id="ss-sdg15-icon">
+                Life on Land
+            </a>
+
+            <button class="navbar-toggler ss-nav-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#ss-nav-links" aria-controls="ss-nav-links" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ss-nav-collapse" id="ss-nav-links">
+                <ul class="navbar-nav ms-auto ss-nav-list">
+
+                    <li class="nav-item ss-nav-item">
+                        <a class="nav-link ss-nav-pill" href="deforestation.html" id="ss-link-deforestation">
+                            Deforestation and Forest Conservation
+                        </a>
+                    </li>
+
+                    <li class="nav-item ss-nav-item">
+                        <a class="nav-link ss-nav-pill" href="australian-wildlife.html" id="ss-link-australian">
+                            Australian Wildlife
+                        </a>
+                    </li>
+
+                    <li class="nav-item ss-nav-item">
+                        <a class="nav-link ss-nav-pill" href="amazon-wildlife.html" id="ss-link-amazon">
+                            Amazon Wildlife
+                        </a>
+                    </li>
+
+                    <li class="nav-item ss-nav-item">
+                        <a class="nav-link ss-nav-pill ss-active" href="farming-page1.html" id="ss-link-farming">
+                            Farming and Agriculture
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+<!-----------------     HERO SECTION     ----------------->
+    <section id="ss-hero" class="ss-hero-section">
+        <div class="container text-center ss-hero-container">
+
+            <div class="ss-hero-img-wrapper">
+                <img src="img/abovelongford1.png"
+                     alt="Aerial view of Longford landscape"
+                     class="ss-hero-img">
+
+                <div class="ss-hero-overlay-text">
+                    <h1 class="fw-bold ss-hero-title" id="ss-hero-title">
+                        Sustainable Farming and Healthy Landscapes
+                    </h1>
+                    <p class="lead ss-hero-subtext" id="ss-hero-subtext">
+                        Exploring how responsible agriculture supports biodiversity, soil health and local communities.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-----------------     FEATURE SECTION  ----------------->
+    <section id="ss-feature" class="ss-feature-section">
+        <div class="container ss-feature-container">
+            <div class="row align-items-center g-4 ss-feature-row">
+
+                <div class="col-md-4 ss-feature-col-img">
+                    <img src="img/655.png" alt="Black and white Irish dairy cow standing in a green field" class="ss-feature-img-cow">
+                </div>
+
+                <div class="col-md-8 ss-feature-col-text">
+                    <h2 class="fw-bold mb-3 ss-feature-title" id="ss-feature-title">
+                        Why Farming and Agriculture Matter 
+                    </h2>
+                    <p class="ss-feature-p" id="ss-feature-p1">
+                        Farming provides food, jobs and livelihoods, but also shapes entire ecosystems.
+                    </p>
+                    <p class="ss-feature-p" id="ss-feature-p2">
+                        Sustainable practices help maintain soil quality, protect water sources and support wildlife habitats.
+                    </p>
+                    <p class="ss-feature-p" id="ss-feature-p3">
+                        By balancing production with protection, agriculture contributes directly to SDG 15: Life on Land.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-----------------     THREE KEY IDEAS  ----------------->
+    <section id="ss-cards" class="ss-cards-section">
+        <div class="container ss-cards-container">
+
+            <div class="text-center mb-4 ss-cards-header">
+                <h3 class="fw-bold ss-cards-title" id="ss-cards-title">Three Pillars of Sustainable Farming</h3>
+            </div>
+
+            <div class="row g-4 ss-cards-row">
+
+                <div class="col-md-4 ss-card-col">
+                    <img src="img/soilhealth.png" alt="Handfull of healthy soil with chemical symbols" class="mb-3 ss-card-img">
+                    <h4 class="fw-bold text-center ss-card-title" id="ss-card1-title">Soil Health</h4>
+                </div>
+
+                <div class="col-md-4 ss-card-col">
+                    <img src="img/wildflowers1.jpg" alt="Wild flowers supporting biodiversity on farmland" class="mb-3 ss-card-img">
+                    <h4 class="fw-bold text-center ss-card-title" id="ss-card2-title">Biodiversity</h4>
+                </div>
+
+                <div class="col-md-4 ss-card-col">
+                    <img src="img/farmersmarket.jpg" alt="Farmers market supporting the local communities & economy" class="mb-3 ss-card-img">
+                    <h4 class="fw-bold text-center ss-card-title" id="ss-card3-title">Community and Economy</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-----------------     NLC MAP SECTION  ----------------->
+    <section id="ss-map-section" class="ss-text-img-section">
+        <div class="container ss-map-container">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h2 class="fw-bold ss-text-img-title">
+                        Land Cover Across Ireland (NLC 2018)
+                    </h2>
+                    <p class="ss-text-img-p">
+                        This interactive map uses the National Land Cover Map 2018 to show how Ireland's land is divided
+                        into grassland, forest, peatland, water and other land-cover types. Zoom in to explore counties
+                        like Longford and see how farmland fits into the wider landscape.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div id="ss-nlc-map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-----------------     CTA SECTION      ----------------->
+    <section id="ss-cta" class="ss-cta-section">
+        <div class="container text-center ss-cta-container">
+            <h3 class="fw-bold ss-cta-title" id="ss-cta-title">What Can We Do To Help?</h3>
+
+            <hr class="mb-2 ss-cta-line" id="ss-cta-line">
+
+            <p class="ss-cta-text" id="ss-cta-text">
+                Choosing locally produced, sustainable food and supporting farmers who protect the land can help make agriculture part of the solution. Becoming aware of the problems and finding enjoyable solutions, even if they are only small actions, they make a big difference. 
+            </p>
+
+            <a href="ss2.html" class="btn ss-btn-cta" id="ss-cta-btn">
+                Learn More Ways to Contribute
+            </a>
+        </div>
+    </section>
+
+<!-----------------     LIGHTBOX         ----------------->
+ <!-- My own photography from The Botanic Gardens, Glasnevin.
+      - Exploring the idea artificial enviornments. 
+      - Highlights importance of maintaining specific conditions. -->
+  
+  <section id="ss-gallery" class="ss-gallery-section">
+
+  <!-- Gallery Heading -->
+    <div class="ss-container text-center mb-4">
+        <h2 class="fw-bold ss-gallery-title"> The National Botanic Gardens, Glasnevin </h2>
+        <p class="ss-gallery-subtext"> Artificial Enviornments - Highlights the importance of maintaining specific enviornmental conditions. </p>
+    </div>
+
+    <div class="ss-row">
+      <div class="ss-column">
+        <img src="img/BotanicalGardens5.png" onclick="openModal();currentSlide(1)" class="ss-hover-shadow">
+      </div>
+      <div class="ss-column">
+        <img src="img/BotanicalGardens3.png" onclick="openModal();currentSlide(2)" class="ss-hover-shadow">
+      </div>
+      <div class="ss-column">
+        <img src="img/BotanicalGardens3.png" onclick="openModal();currentSlide(3)" class="ss-hover-shadow">
+      </div>
+      <div class="ss-column">
+        <img src="img/BotanicalGardens4.png" onclick="openModal();currentSlide(4)" class="ss-hover-shadow">
+      </div>
+    </div>
+
+  <!-- The Modal/Lightbox -->
+    <div id="ss-myModal" class="ss-modal">
+      <span class="ss-close cursor" onclick="closeModal()">&times;</span>
+      <div class="ss-modal-content">
+
+        <div class="ss-mySlides">
+          <div class="ss-numbertext">1 / 4</div>
+          <img src="img/BotanicalGardens5.png" style="width:100%">
+        </div>
+
+        <div class="ss-mySlides">
+          <div class="ss-numbertext">2 / 4</div>
+          <img src="img/BotanicalGardens3.png" style="width:100%">
+        </div>
+
+        <div class="ss-mySlides">
+          <div class="ss-numbertext">3 / 4</div>
+          <img src="img/BotanicalGardens4.png" style="width:100%">
+        </div>
+
+        <div class="ss-mySlides">
+          <div class="ss-numbertext">4 / 4</div>
+          <img src="img/BotanicalGardens6.png" style="width:100%">
+        </div>
+
+    <!-- Next/previous controls -->
+        <a class="ss-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="ss-next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+        <div class="ss-caption-container">
+          <p id="ss-caption">Botanical Gardens Green house</p>
+        </div>
+
+    <!-- Thumbnail image controls -->
+        <div class="ss-column">
+          <img class="ss-demo" src="img/BotanicalGardens5.png" onclick="currentSlide(1)" alt="Botanical Gardens Green house_1">
+        </div>
+
+        <div class="ss-column">
+          <img class="ss-demo" src="img/BotanicalGardens3.png" onclick="currentSlide(2)" alt="Botanical Gardens Green house_2">
+        </div>
+
+        <div class="ss-column">
+          <img class="ss-demo" src="img/BotanicalGardens4.png" onclick="currentSlide(3)" alt="Botanical Gardens Green house_3">
+        </div>
+
+        <div class="ss-column">
+          <img class="ss-demo" src="img/BotanicalGardens6.png" onclick="currentSlide(4)" alt="Botanical Gardens Green house_4">
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+<!-----------------     Bootstrap JS     ----------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-----------------     Leaflet JS       ----------------->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+    </script>
+
+<!-----------------     NLC MAP JS       ----------------->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var map = L.map("ss-nlc-map").setView([53.4, -8.1], 7);
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var nlcLayer = L.tileLayer(
+                "https://tiles.arcgis.com/tiles/9O52S6mcmIoo6dMv/arcgis/rest/services/National_Land_Cover_ITM/MapServer/tile/{z}/{y}/{x}",
+                {
+                    opacity: 0.8,
+                    attribution: 'National Land Cover Map 2018 &copy; Tailte Éireann &amp; EPA'
+                }
+            );
+
+            nlcLayer.addTo(map);
+
+            var longfordBtn = L.control({ position: "topright" });
+
+            longfordBtn.onAdd = function () {
+                var btn = L.DomUtil.create("button", "btn btn-sm ss-map-btn");
+                btn.innerHTML = "Focus on Longford";
+                btn.style.margin = "10px";
+                btn.style.backgroundColor = "rgba(1,3,18,0.85)";
+                btn.style.color = "#C2E5F4";
+                btn.style.borderRadius = "999px";
+                btn.style.border = "none";
+                btn.style.padding = "0.35rem 1rem";
+                btn.style.cursor = "pointer";
+
+                L.DomEvent.on(btn, "click", function (e) {
+                    L.DomEvent.stopPropagation(e);
+                    map.flyTo([53.73, -7.78], 10);
+                });
+
+                return btn;
+            };
+
+            longfordBtn.addTo(map);
+        });
+    </script>
+
+<!-----------------     Lightbox JS      ----------------->
+    <script>
+      // Open the Modal
+        function openModal() {
+          document.getElementById("ss-myModal").style.display = "block";
+        }
+
+      // Close the Modal
+        function closeModal() {
+          document.getElementById("ss-myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+      // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+      // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("ss-mySlides");
+          var dots = document.getElementsByClassName("ss-demo");
+          var captionText = document.getElementById("ss-caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+</body>
+</html>
